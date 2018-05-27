@@ -1,0 +1,1570 @@
+{
+  "contractName": "PublicLedger",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "propertyTable",
+      "outputs": [
+        {
+          "name": "propertyContract",
+          "type": "address"
+        },
+        {
+          "name": "geoLocation",
+          "type": "string"
+        },
+        {
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "name": "seller",
+          "type": "address"
+        },
+        {
+          "name": "newOwner",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "propertyTableSize",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_propertyContract",
+          "type": "address"
+        },
+        {
+          "name": "_newOwner",
+          "type": "address"
+        },
+        {
+          "name": "_geoLocation",
+          "type": "string"
+        },
+        {
+          "name": "_description",
+          "type": "string"
+        },
+        {
+          "name": "_oldOwner",
+          "type": "address"
+        }
+      ],
+      "name": "registerProperty",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b506107a3806100206000396000f300608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632908676e1461005c5780634b9b018314610207578063f9a1570914610316575b600080fd5b34801561006857600080fd5b5061008760048036038101908080359060200190929190505050610341565b604051808673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200180602001806020018573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001838103835287818151815260200191508051906020019080838360005b83811015610161578082015181840152602081019050610146565b50505050905090810190601f16801561018e5780820380516001836020036101000a031916815260200191505b50838103825286818151815260200191508051906020019080838360005b838110156101c75780820151818401526020810190506101ac565b50505050905090810190601f1680156101f45780820380516001836020036101000a031916815260200191505b5097505050505050505060405180910390f35b34801561021357600080fd5b50610314600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610516565b005b34801561032257600080fd5b5061032b6106c6565b6040518082815260200191505060405180910390f35b60008181548110151561035057fe5b90600052602060002090600502016000915090508060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1690806001018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156104225780601f106103f757610100808354040283529160200191610422565b820191906000526020600020905b81548152906001019060200180831161040557829003601f168201915b505050505090806002018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156104c05780601f10610495576101008083540402835291602001916104c0565b820191906000526020600020905b8154815290600101906020018083116104a357829003601f168201915b5050505050908060030160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060040160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905085565b600060a0604051908101604052808773ffffffffffffffffffffffffffffffffffffffff1681526020018581526020018481526020018373ffffffffffffffffffffffffffffffffffffffff1681526020018673ffffffffffffffffffffffffffffffffffffffff168152509080600181540180825580915050906001820390600052602060002090600502016000909192909190915060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060208201518160010190805190602001906106109291906106d2565b50604082015181600201908051906020019061062d9291906106d2565b5060608201518160030160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060808201518160040160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050505050505050565b60008080549050905090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061071357805160ff1916838001178555610741565b82800160010185558215610741579182015b82811115610740578251825591602001919060010190610725565b5b50905061074e9190610752565b5090565b61077491905b80821115610770576000816000905550600101610758565b5090565b905600a165627a7a72305820f07b8923f291063db4b43a80c9e487fe7f6f88fc4c1a29b981ebb2da3cdffe3f0029",
+  "deployedBytecode": "0x608060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680632908676e1461005c5780634b9b018314610207578063f9a1570914610316575b600080fd5b34801561006857600080fd5b5061008760048036038101908080359060200190929190505050610341565b604051808673ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200180602001806020018573ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001838103835287818151815260200191508051906020019080838360005b83811015610161578082015181840152602081019050610146565b50505050905090810190601f16801561018e5780820380516001836020036101000a031916815260200191505b50838103825286818151815260200191508051906020019080838360005b838110156101c75780820151818401526020810190506101ac565b50505050905090810190601f1680156101f45780820380516001836020036101000a031916815260200191505b5097505050505050505060405180910390f35b34801561021357600080fd5b50610314600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803590602001908201803590602001908080601f0160208091040260200160405190810160405280939291908181526020018383808284378201915050505050509192919290803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610516565b005b34801561032257600080fd5b5061032b6106c6565b6040518082815260200191505060405180910390f35b60008181548110151561035057fe5b90600052602060002090600502016000915090508060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1690806001018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156104225780601f106103f757610100808354040283529160200191610422565b820191906000526020600020905b81548152906001019060200180831161040557829003601f168201915b505050505090806002018054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156104c05780601f10610495576101008083540402835291602001916104c0565b820191906000526020600020905b8154815290600101906020018083116104a357829003601f168201915b5050505050908060030160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060040160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16905085565b600060a0604051908101604052808773ffffffffffffffffffffffffffffffffffffffff1681526020018581526020018481526020018373ffffffffffffffffffffffffffffffffffffffff1681526020018673ffffffffffffffffffffffffffffffffffffffff168152509080600181540180825580915050906001820390600052602060002090600502016000909192909190915060008201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060208201518160010190805190602001906106109291906106d2565b50604082015181600201908051906020019061062d9291906106d2565b5060608201518160030160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff16021790555060808201518160040160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050505050505050565b60008080549050905090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061071357805160ff1916838001178555610741565b82800160010185558215610741579182015b82811115610740578251825591602001919060010190610725565b5b50905061074e9190610752565b5090565b61077491905b80821115610770576000816000905550600101610758565b5090565b905600a165627a7a72305820f07b8923f291063db4b43a80c9e487fe7f6f88fc4c1a29b981ebb2da3cdffe3f0029",
+  "sourceMap": "26:684:2:-;;;234:25;8:9:-1;5:2;;;30:1;27;20:12;5:2;234:25:2;26:684;;;;;;",
+  "deployedSourceMap": "26:684:2:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;53:31;;8:9:-1;5:2;;;30:1;27;20:12;5:2;53:31:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;53:31:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;53:31:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;359:349;;8:9:-1;5:2;;;30:1;27;20:12;5:2;359:349:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;263:92;;8:9:-1;5:2;;;30:1;27;20:12;5:2;263:92:2;;;;;;;;;;;;;;;;;;;;;;;53:31;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;359:349::-;505:13;525:177;;;;;;;;;560:17;525:177;;;;;;598:12;525:177;;;;631:12;525:177;;;;686:9;525:177;;;;;;661:9;525:177;;;;;505:198;;39:1:-1;33:3;27:10;23:18;57:10;52:3;45:23;79:10;72:17;;0:93;505:198:2;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;359:349;;;;;:::o;263:92::-;313:4;332:13;:20;;;;325:27;;263:92;:::o;26:684::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.4.22;\n\ncontract PublicLedger {\n\n  Property[] public propertyTable;\n\n  struct Property {\n    address propertyContract;\n    string geoLocation;\n    string description;\n    address seller;\n    address newOwner;\n  }\n\n  constructor() public{\n  }\n\n  function propertyTableSize() public view returns (uint) {\n    return propertyTable.length;\n}\n\n  function registerProperty(address _propertyContract, address _newOwner, string _geoLocation, string _description, address _oldOwner) public {\n    propertyTable.push( Property({\n      propertyContract: _propertyContract,\n      geoLocation: _geoLocation,\n      description: _description,\n      newOwner: _newOwner,\n      seller: _oldOwner\n    }));\n  }\n}\n",
+  "sourcePath": "C:\\Users\\michael\\Documents\\blockchain\\EthereumAuction\\contracts\\PublicLedger.sol",
+  "ast": {
+    "absolutePath": "/C/Users/michael/Documents/blockchain/EthereumAuction/contracts/PublicLedger.sol",
+    "exportedSymbols": {
+      "PublicLedger": [
+        292
+      ]
+    },
+    "id": 293,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 238,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".22"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 292,
+        "linearizedBaseContracts": [
+          292
+        ],
+        "name": "PublicLedger",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 241,
+            "name": "propertyTable",
+            "nodeType": "VariableDeclaration",
+            "scope": 292,
+            "src": "53:31:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_Property_$252_storage_$dyn_storage",
+              "typeString": "struct PublicLedger.Property[]"
+            },
+            "typeName": {
+              "baseType": {
+                "contractScope": null,
+                "id": 239,
+                "name": "Property",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 252,
+                "src": "53:8:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Property_$252_storage_ptr",
+                  "typeString": "struct PublicLedger.Property"
+                }
+              },
+              "id": 240,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "53:10:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_Property_$252_storage_$dyn_storage_ptr",
+                "typeString": "struct PublicLedger.Property[]"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "PublicLedger.Property",
+            "id": 252,
+            "members": [
+              {
+                "constant": false,
+                "id": 243,
+                "name": "propertyContract",
+                "nodeType": "VariableDeclaration",
+                "scope": 252,
+                "src": "111:24:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 242,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "111:7:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 245,
+                "name": "geoLocation",
+                "nodeType": "VariableDeclaration",
+                "scope": 252,
+                "src": "141:18:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 244,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "141:6:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 247,
+                "name": "description",
+                "nodeType": "VariableDeclaration",
+                "scope": 252,
+                "src": "165:18:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 246,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "165:6:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 249,
+                "name": "seller",
+                "nodeType": "VariableDeclaration",
+                "scope": 252,
+                "src": "189:14:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 248,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "189:7:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 251,
+                "name": "newOwner",
+                "nodeType": "VariableDeclaration",
+                "scope": 252,
+                "src": "209:16:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 250,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "209:7:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Property",
+            "nodeType": "StructDefinition",
+            "scope": 292,
+            "src": "89:141:2",
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 255,
+              "nodeType": "Block",
+              "src": "254:5:2",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 256,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 253,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "245:2:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 254,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "254:0:2"
+            },
+            "scope": 292,
+            "src": "234:25:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 264,
+              "nodeType": "Block",
+              "src": "319:36:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 261,
+                      "name": "propertyTable",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 241,
+                      "src": "332:13:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_struct$_Property_$252_storage_$dyn_storage",
+                        "typeString": "struct PublicLedger.Property storage ref[] storage ref"
+                      }
+                    },
+                    "id": 262,
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "length",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": null,
+                    "src": "332:20:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 260,
+                  "id": 263,
+                  "nodeType": "Return",
+                  "src": "325:27:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 265,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "propertyTableSize",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 257,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "289:2:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 260,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 259,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 265,
+                  "src": "313:4:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 258,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "313:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "312:6:2"
+            },
+            "scope": 292,
+            "src": "263:92:2",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 290,
+              "nodeType": "Block",
+              "src": "499:209:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 282,
+                            "name": "_propertyContract",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 267,
+                            "src": "560:17:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "id": 283,
+                            "name": "_geoLocation",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 271,
+                            "src": "598:12:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_string_memory_ptr",
+                              "typeString": "string memory"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "id": 284,
+                            "name": "_description",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 273,
+                            "src": "631:12:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_string_memory_ptr",
+                              "typeString": "string memory"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "id": 285,
+                            "name": "_newOwner",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 269,
+                            "src": "661:9:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "id": 286,
+                            "name": "_oldOwner",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 275,
+                            "src": "686:9:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 281,
+                          "name": "Property",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 252,
+                          "src": "525:8:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_struct$_Property_$252_storage_ptr_$",
+                            "typeString": "type(struct PublicLedger.Property storage pointer)"
+                          }
+                        },
+                        "id": 287,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "structConstructorCall",
+                        "lValueRequested": false,
+                        "names": [
+                          "propertyContract",
+                          "geoLocation",
+                          "description",
+                          "newOwner",
+                          "seller"
+                        ],
+                        "nodeType": "FunctionCall",
+                        "src": "525:177:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Property_$252_memory",
+                          "typeString": "struct PublicLedger.Property memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_struct$_Property_$252_memory",
+                          "typeString": "struct PublicLedger.Property memory"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 278,
+                        "name": "propertyTable",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 241,
+                        "src": "505:13:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_Property_$252_storage_$dyn_storage",
+                          "typeString": "struct PublicLedger.Property storage ref[] storage ref"
+                        }
+                      },
+                      "id": 280,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "push",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "505:18:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_Property_$252_storage_$returns$_t_uint256_$",
+                        "typeString": "function (struct PublicLedger.Property storage ref) returns (uint256)"
+                      }
+                    },
+                    "id": 288,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "505:198:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 289,
+                  "nodeType": "ExpressionStatement",
+                  "src": "505:198:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 291,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "registerProperty",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 276,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 267,
+                  "name": "_propertyContract",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 291,
+                  "src": "385:25:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 266,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "385:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 269,
+                  "name": "_newOwner",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 291,
+                  "src": "412:17:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 268,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "412:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 271,
+                  "name": "_geoLocation",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 291,
+                  "src": "431:19:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 270,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "431:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 273,
+                  "name": "_description",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 291,
+                  "src": "452:19:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 272,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "452:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 275,
+                  "name": "_oldOwner",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 291,
+                  "src": "473:17:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 274,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "473:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "384:107:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 277,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "499:0:2"
+            },
+            "scope": 292,
+            "src": "359:349:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 293,
+        "src": "26:684:2"
+      }
+    ],
+    "src": "0:711:2"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/michael/Documents/blockchain/EthereumAuction/contracts/PublicLedger.sol",
+    "exportedSymbols": {
+      "PublicLedger": [
+        292
+      ]
+    },
+    "id": 293,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 238,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".22"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 292,
+        "linearizedBaseContracts": [
+          292
+        ],
+        "name": "PublicLedger",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 241,
+            "name": "propertyTable",
+            "nodeType": "VariableDeclaration",
+            "scope": 292,
+            "src": "53:31:2",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_Property_$252_storage_$dyn_storage",
+              "typeString": "struct PublicLedger.Property[]"
+            },
+            "typeName": {
+              "baseType": {
+                "contractScope": null,
+                "id": 239,
+                "name": "Property",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 252,
+                "src": "53:8:2",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Property_$252_storage_ptr",
+                  "typeString": "struct PublicLedger.Property"
+                }
+              },
+              "id": 240,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "53:10:2",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_Property_$252_storage_$dyn_storage_ptr",
+                "typeString": "struct PublicLedger.Property[]"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "PublicLedger.Property",
+            "id": 252,
+            "members": [
+              {
+                "constant": false,
+                "id": 243,
+                "name": "propertyContract",
+                "nodeType": "VariableDeclaration",
+                "scope": 252,
+                "src": "111:24:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 242,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "111:7:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 245,
+                "name": "geoLocation",
+                "nodeType": "VariableDeclaration",
+                "scope": 252,
+                "src": "141:18:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 244,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "141:6:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 247,
+                "name": "description",
+                "nodeType": "VariableDeclaration",
+                "scope": 252,
+                "src": "165:18:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 246,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "165:6:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 249,
+                "name": "seller",
+                "nodeType": "VariableDeclaration",
+                "scope": 252,
+                "src": "189:14:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 248,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "189:7:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 251,
+                "name": "newOwner",
+                "nodeType": "VariableDeclaration",
+                "scope": 252,
+                "src": "209:16:2",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 250,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "209:7:2",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Property",
+            "nodeType": "StructDefinition",
+            "scope": 292,
+            "src": "89:141:2",
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 255,
+              "nodeType": "Block",
+              "src": "254:5:2",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 256,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 253,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "245:2:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 254,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "254:0:2"
+            },
+            "scope": 292,
+            "src": "234:25:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 264,
+              "nodeType": "Block",
+              "src": "319:36:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 261,
+                      "name": "propertyTable",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 241,
+                      "src": "332:13:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_array$_t_struct$_Property_$252_storage_$dyn_storage",
+                        "typeString": "struct PublicLedger.Property storage ref[] storage ref"
+                      }
+                    },
+                    "id": 262,
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "length",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": null,
+                    "src": "332:20:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 260,
+                  "id": 263,
+                  "nodeType": "Return",
+                  "src": "325:27:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 265,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": true,
+            "modifiers": [],
+            "name": "propertyTableSize",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 257,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "289:2:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 260,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 259,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 265,
+                  "src": "313:4:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 258,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "313:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "312:6:2"
+            },
+            "scope": 292,
+            "src": "263:92:2",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 290,
+              "nodeType": "Block",
+              "src": "499:209:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "arguments": [
+                          {
+                            "argumentTypes": null,
+                            "id": 282,
+                            "name": "_propertyContract",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 267,
+                            "src": "560:17:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "id": 283,
+                            "name": "_geoLocation",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 271,
+                            "src": "598:12:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_string_memory_ptr",
+                              "typeString": "string memory"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "id": 284,
+                            "name": "_description",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 273,
+                            "src": "631:12:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_string_memory_ptr",
+                              "typeString": "string memory"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "id": 285,
+                            "name": "_newOwner",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 269,
+                            "src": "661:9:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          {
+                            "argumentTypes": null,
+                            "id": 286,
+                            "name": "_oldOwner",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 275,
+                            "src": "686:9:2",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          }
+                        ],
+                        "expression": {
+                          "argumentTypes": null,
+                          "id": 281,
+                          "name": "Property",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 252,
+                          "src": "525:8:2",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_type$_t_struct$_Property_$252_storage_ptr_$",
+                            "typeString": "type(struct PublicLedger.Property storage pointer)"
+                          }
+                        },
+                        "id": 287,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": false,
+                        "kind": "structConstructorCall",
+                        "lValueRequested": false,
+                        "names": [
+                          "propertyContract",
+                          "geoLocation",
+                          "description",
+                          "newOwner",
+                          "seller"
+                        ],
+                        "nodeType": "FunctionCall",
+                        "src": "525:177:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_Property_$252_memory",
+                          "typeString": "struct PublicLedger.Property memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_struct$_Property_$252_memory",
+                          "typeString": "struct PublicLedger.Property memory"
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 278,
+                        "name": "propertyTable",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 241,
+                        "src": "505:13:2",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_array$_t_struct$_Property_$252_storage_$dyn_storage",
+                          "typeString": "struct PublicLedger.Property storage ref[] storage ref"
+                        }
+                      },
+                      "id": 280,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "lValueRequested": false,
+                      "memberName": "push",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": null,
+                      "src": "505:18:2",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_struct$_Property_$252_storage_$returns$_t_uint256_$",
+                        "typeString": "function (struct PublicLedger.Property storage ref) returns (uint256)"
+                      }
+                    },
+                    "id": 288,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "505:198:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 289,
+                  "nodeType": "ExpressionStatement",
+                  "src": "505:198:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 291,
+            "implemented": true,
+            "isConstructor": false,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "registerProperty",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 276,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 267,
+                  "name": "_propertyContract",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 291,
+                  "src": "385:25:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 266,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "385:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 269,
+                  "name": "_newOwner",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 291,
+                  "src": "412:17:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 268,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "412:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 271,
+                  "name": "_geoLocation",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 291,
+                  "src": "431:19:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 270,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "431:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 273,
+                  "name": "_description",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 291,
+                  "src": "452:19:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 272,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "452:6:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 275,
+                  "name": "_oldOwner",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 291,
+                  "src": "473:17:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 274,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "473:7:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "384:107:2"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 277,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "499:0:2"
+            },
+            "scope": 292,
+            "src": "359:349:2",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 293,
+        "src": "26:684:2"
+      }
+    ],
+    "src": "0:711:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.23+commit.124ca40d.Emscripten.clang"
+  },
+  "networks": {
+    "1526831082819": {
+      "events": {},
+      "links": {},
+      "address": "0x15b9ad77e8878f82fdeeaf468f3b181a5c80c390",
+      "transactionHash": "0x8c76a87df05a32333305cb90f9f24b4e2fe85e0fb6af61e7aa650f31672dc440"
+    },
+    "1526831246285": {
+      "events": {},
+      "links": {},
+      "address": "0xd4f1e1dbd29b817738fc7b258ea55fe2dcdad1b1",
+      "transactionHash": "0xcb0af2492e86c5a4f02cee676b63810e80655c9265681ad3341c8b5bc8583a7c"
+    },
+    "1526843784083": {
+      "events": {},
+      "links": {},
+      "address": "0x4ceb194c9dcc750cb76a4509f46fdd90a23734c6",
+      "transactionHash": "0xcb0af2492e86c5a4f02cee676b63810e80655c9265681ad3341c8b5bc8583a7c"
+    },
+    "1526844293527": {
+      "events": {},
+      "links": {},
+      "address": "0x24147d5a3c60645cf46249eb03f1239550163ace",
+      "transactionHash": "0xcb0af2492e86c5a4f02cee676b63810e80655c9265681ad3341c8b5bc8583a7c"
+    },
+    "1526844661045": {
+      "events": {},
+      "links": {},
+      "address": "0xcbced9f05fdeae0662839190ed4d150b15c7ec45",
+      "transactionHash": "0xcb0af2492e86c5a4f02cee676b63810e80655c9265681ad3341c8b5bc8583a7c"
+    },
+    "1526864317019": {
+      "events": {},
+      "links": {},
+      "address": "0x8255615bab9a25b5bf8b3ba778d1506d69500adf",
+      "transactionHash": "0xcb0af2492e86c5a4f02cee676b63810e80655c9265681ad3341c8b5bc8583a7c"
+    },
+    "1526865082713": {
+      "events": {},
+      "links": {},
+      "address": "0x65d92d32835eb03b415b387243785cda41dd930f",
+      "transactionHash": "0xcb0af2492e86c5a4f02cee676b63810e80655c9265681ad3341c8b5bc8583a7c"
+    },
+    "1526865531292": {
+      "events": {},
+      "links": {},
+      "address": "0xc650230e77df200f4e727b5fa4903f90a263079d",
+      "transactionHash": "0xcb0af2492e86c5a4f02cee676b63810e80655c9265681ad3341c8b5bc8583a7c"
+    },
+    "1526866267230": {
+      "events": {},
+      "links": {},
+      "address": "0xa80ebac0de73e95048127b07256c806a8e9f8850",
+      "transactionHash": "0xcb0af2492e86c5a4f02cee676b63810e80655c9265681ad3341c8b5bc8583a7c"
+    },
+    "1527168379463": {
+      "events": {},
+      "links": {},
+      "address": "0x494f64e18f23d8c989fcabb4d42e97ac4a7d6386",
+      "transactionHash": "0xcb0af2492e86c5a4f02cee676b63810e80655c9265681ad3341c8b5bc8583a7c"
+    },
+    "1527172854465": {
+      "events": {},
+      "links": {},
+      "address": "0xdf4fff3403a05f091ddfe312cb55300f8638ea34",
+      "transactionHash": "0xcb0af2492e86c5a4f02cee676b63810e80655c9265681ad3341c8b5bc8583a7c"
+    },
+    "1527176084126": {
+      "events": {},
+      "links": {},
+      "address": "0x19084bfa97dc95c215a5ac2c757d06b2944eefc0",
+      "transactionHash": "0x90fe1d7183575cdb59c07e380a6486630223659e2ddecfcfc1992c4004f96504"
+    },
+    "1527177280544": {
+      "events": {},
+      "links": {},
+      "address": "0x51d59bd86170a0632083d57227ec5fb19d5208d5",
+      "transactionHash": "0xf543a9f763f7fce184e60aa0efb2a72b1530d43177262199c573bfc55c5913c6"
+    },
+    "1527197684331": {
+      "events": {},
+      "links": {},
+      "address": "0xd982e6dd80440dde2a0b49413c1f377802242918",
+      "transactionHash": "0x570575d0125f8f412fce3777f9d67522afbda154d82f696dbc19e1394e686c7d"
+    },
+    "1527348507342": {
+      "events": {},
+      "links": {},
+      "address": "0x00aceb6f6d66e106626684ca8cb14923efba35d0",
+      "transactionHash": "0x7787d99a26abe75fc93605da3a952f03c719b1ddf9cfb9d85ae0dddc147dc591"
+    },
+    "1527350347661": {
+      "events": {},
+      "links": {},
+      "address": "0xee5ec9293b64691b68d497cd93eddea461c435e6",
+      "transactionHash": "0x7787d99a26abe75fc93605da3a952f03c719b1ddf9cfb9d85ae0dddc147dc591"
+    },
+    "1527351453465": {
+      "events": {},
+      "links": {},
+      "address": "0x408d220d8cfc296cc4d0a72748e63be73f081a2a",
+      "transactionHash": "0x7787d99a26abe75fc93605da3a952f03c719b1ddf9cfb9d85ae0dddc147dc591"
+    },
+    "1527384835583": {
+      "events": {},
+      "links": {},
+      "address": "0x06c3ae85efc3fd632c938cd292b8e55f19f861ca",
+      "transactionHash": "0x1840f01299b9b11a219befe6f3b14872221d2ea7ea05e99c4a0422c6001af374"
+    },
+    "1527388155063": {
+      "events": {},
+      "links": {},
+      "address": "0x696e46d6c2cab9e26591ca35fad10a7eeb009fb4",
+      "transactionHash": "0x4671bd1d6d07e7a43cd01eab6d650957dd9ee87130b2e28e3f5be6885f41caab"
+    }
+  },
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-05-27T02:32:43.147Z"
+}

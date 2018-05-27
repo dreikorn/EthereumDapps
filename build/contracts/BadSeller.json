@@ -1,0 +1,174 @@
+{
+  "contractName": "BadSeller",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3006080604052600080fd00a165627a7a72305820694073ee950564abe86395899404fdebec58824d16cb5a2045d986aa387468f20029",
+  "deployedBytecode": "0x6080604052600080fd00a165627a7a72305820694073ee950564abe86395899404fdebec58824d16cb5a2045d986aa387468f20029",
+  "sourceMap": "26:55:0:-;;;51:28;8:9:-1;5:2;;;30:1;27;20:12;5:2;51:28:0;26:55;;;;;;",
+  "deployedSourceMap": "26:55:0:-;;;;;",
+  "source": "pragma solidity ^0.4.22;\n\ncontract BadSeller {\n    function BadSeller(){\n\n    }\n}\n",
+  "sourcePath": "C:\\Users\\michael\\Documents\\blockchain\\EthereumAuction\\contracts\\BadSeller.sol",
+  "ast": {
+    "absolutePath": "/C/Users/michael/Documents/blockchain/EthereumAuction/contracts/BadSeller.sol",
+    "exportedSymbols": {
+      "BadSeller": [
+        6
+      ]
+    },
+    "id": 7,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".22"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 6,
+        "linearizedBaseContracts": [
+          6
+        ],
+        "name": "BadSeller",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 4,
+              "nodeType": "Block",
+              "src": "71:8:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 5,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "BadSeller",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "69:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "71:0:0"
+            },
+            "scope": 6,
+            "src": "51:28:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 7,
+        "src": "26:55:0"
+      }
+    ],
+    "src": "0:82:0"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/michael/Documents/blockchain/EthereumAuction/contracts/BadSeller.sol",
+    "exportedSymbols": {
+      "BadSeller": [
+        6
+      ]
+    },
+    "id": 7,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".22"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 6,
+        "linearizedBaseContracts": [
+          6
+        ],
+        "name": "BadSeller",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 4,
+              "nodeType": "Block",
+              "src": "71:8:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 5,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "BadSeller",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 2,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "69:2:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 3,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "71:0:0"
+            },
+            "scope": 6,
+            "src": "51:28:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 7,
+        "src": "26:55:0"
+      }
+    ],
+    "src": "0:82:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.23+commit.124ca40d.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-05-26T15:27:20.117Z"
+}
