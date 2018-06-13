@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  dapp:
+    build: .
+    image: ethereum_dapps_workshop
+    ports:
+      - 8545:8545
+      - 8089:8089
+    volumes:
+      - $PWD:/code

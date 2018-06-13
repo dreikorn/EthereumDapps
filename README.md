@@ -1,16 +1,16 @@
 # Ethereum Dapp Demo
 
-> A very simple Ethereum DApp with [Vue.js](https://vuejs.org/) frontend. 
+> A very simple Ethereum DApp with [Vue.js](https://vuejs.org/) frontend.
 > This application represents two use cases of low complexity and is by
 > no means ready for a real world production scenario, since it does not
 > consider the full impact of Eventual Consistency in the Blockchain and
 > intentionally uses some antipatterns to demo their negative Impact in
-> the Workshop in more detail. 
+> the Workshop in more detail.
 
 ## On Windows machines
 
 
-[Install Chocolatey](https://chocolatey.org/) 
+[Install Chocolatey](https://chocolatey.org/)
 
 ``` bash
 # install NodeJS
@@ -50,7 +50,7 @@ ganache-cli
 - Install [Metamask Browser Plugin](https://metamask.io)
 - Import the generated Accounts into Metamask
 
-### Compile + Migrate Contracts and Build App 
+### Compile + Migrate Contracts and Build App
 
 Go to Project Directory
 
@@ -59,9 +59,23 @@ Go to Project Directory
 
 /your/path/to/truffle migrate
 
-npm install 
+npm install
 
-npm run dev 
+npm run dev
 ```
 
 Start using the [App](http://localhost:8089/)
+
+## With docker-compose
+
+Instead of doing all the build stuff mentioned before you can use docker to run the dapp demo.  Just build the image and then start the container:
+
+```
+sudo docker-compose build
+sudo docker-compose up
+```
+
+After the demo dapp is running:
+
+- Install [Metamask Browser Plugin](https://metamask.io)
+- Import the generated Accounts into Metamask
